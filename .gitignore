@@ -1,0 +1,65 @@
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Compiled binary/executable
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Static & Dynamic libs
+*.lib
+*.a
+*.la
+*.lo
+
+# CMake build folders
+build/
+Build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+
+# Qt build folders
+*.pro.user*
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# CodeBlocks project files
+*.depend
+*.layout
+
+# Visual Studio Code files
+.vscode/
+*.code-workspace
+
+# CLion and JetBrains IDEs
+.idea/
+cmake-build-*/
+
+# Mac OS files
+.DS_Store
+
+# Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Others
+*.log
+*.tmp
+*.swp
+*~
