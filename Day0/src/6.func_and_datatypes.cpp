@@ -13,7 +13,7 @@ int printint(int i) {
 
 float printfloat(float f) {
 	cout << "float value " << f << " size of float is " << sizeof(f) << " byte" << endl;
-	return 25.65;
+	return 25.65f;
 }
 
 double printdouble(double d) {
@@ -26,7 +26,7 @@ int func_and_datatypes()
 {
 	char character = 'a';
 	int integer = 1;
-	float single_precision = 20.123;
+	float single_precision = 20.123f;
 	double double_precision = 20.123;
 
 	character = printchar(character);

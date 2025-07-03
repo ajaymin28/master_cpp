@@ -15,12 +15,13 @@ int print(int i) {
 
 float print(float f) {
 	cout << "float value " << f << " size of float is " << sizeof(f) << " byte" << endl;
-	return 25.65;
+	return 25.65f;
 }
 
-int print(float f, int x) {
+float print(float f, int x) {
 	cout << "float value " << f << " size of float is " << sizeof(f) << " byte" << endl;
-	return 25.65;
+	cout << "int value " << x << " size of int is " << sizeof(x) << " byte" << endl;
+	return f;
 }
 
 double print(double d) {
@@ -33,7 +34,7 @@ int func_overloading()
 {
 	char character = 'a';
 	int integer = 1;
-	float single_precision = 20.123;
+	float single_precision = 20.123f;
 	double double_precision = 20.123;
 
 	character = print(character);

@@ -27,7 +27,8 @@ int fibonacci(int n) {
 }
 
 // rename it to main()
-int recursion()
+// int recursion()
+int main()
 {
 	int n=5;
 	int fn = factorial(n);
