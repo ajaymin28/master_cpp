@@ -4,7 +4,8 @@
 using namespace std;
 
 
-int main(){
+// int main(){
+int smartpointer(){
 
     shared_ptr<int> shared_int1(new int(5));
     shared_ptr<int> shared_int2  = shared_int1;  // copy constructor will increase the counter of usage.

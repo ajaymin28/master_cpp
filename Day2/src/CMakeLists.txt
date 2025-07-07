@@ -14,8 +14,9 @@ add_executable (cpp_master_d2  "Vehicle.cpp"
         "7.ClassTemplates.cpp" "8.TempleteClassesMultiImplementation.cpp"
         "9.AutoTypes.cpp" "10.ForEachLoops.cpp"  # c++11 onwards
         "11.Lambdas.cpp" "12.SmartPointer.cpp"
-        "13.Unions.cpp" "14.Modifier.cpp"
-        
+        "13.Unions.cpp" "14.Modifier.cpp" 
+        "15.EnumsExample.cpp"
+
         )
 
 
