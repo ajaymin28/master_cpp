@@ -1,3 +1,6 @@
+[![CMake on multiple platforms](https://github.com/ajaymin28/master_cpp/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/ajaymin28/master_cpp/actions/workflows/cmake-multi-platform.yml)
+
+
 # C++ Learning Journey 🚀
 
 This repository contains my daily C++ practice and learning exercises, organized by day and topic. Each day's folder includes focused source files and example programs to reinforce fundamental and advanced concepts in C++.
