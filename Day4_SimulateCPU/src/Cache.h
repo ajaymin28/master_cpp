@@ -4,6 +4,8 @@
 #include "common.h"
 #include "RAM.h"
 
+using namespace std;
+
 //--------------------- Cache Level --------------------
 class Cache {
 public:
@@ -14,8 +16,8 @@ public:
     Cache(string n) : name(n) {}
 
     // Recursive fetch with cache promotion
-    int fetch(const string& var, RAM* ram = nullptr);
-    void write(const string& var, int value, RAM* ram = nullptr);
+    int fetch(const string& var, RAM* ram);
+    void write(const string& var, int value, RAM* ram);
 };
 
 #endif

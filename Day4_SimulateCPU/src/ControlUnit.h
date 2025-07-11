@@ -1,7 +1,6 @@
 #ifndef CONTROL_UNIT_H
 #define CONTROL_UNIT_H
 
-#include "common.h"
 #include "RAM.h"
 #include "Cache.h"
 #include "Registers.h"

@@ -2,7 +2,7 @@
 #define RAM_H
 
 #include "common.h"
-
+using namespace std;
 //----------------------- RAM --------------------------
 class RAM {
 public:

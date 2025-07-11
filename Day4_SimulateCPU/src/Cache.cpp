@@ -2,6 +2,8 @@
 #include "Cache.h"
 #include "RAM.h"
 
+using namespace std;
+
 int Cache::fetch(const string& var, RAM* ram = nullptr) {
     if (cache.count(var)) {
         cout << "Hit in " << name << " cache for " << var << endl;

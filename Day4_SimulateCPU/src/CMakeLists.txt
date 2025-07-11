@@ -8,7 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add source to this project's executable.
 add_executable (cpp_master_cpu_sim  
-          "Cache.cpp"
+          "ALU.CPP" "Cache.cpp" "ControlUnit.cpp" "Multiplexer.cpp" "RAM.cpp" "Registers.cpp"
           "main.cpp"
         )
 

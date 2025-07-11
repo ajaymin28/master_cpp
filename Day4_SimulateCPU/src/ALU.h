@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-static enum ALU_OPCODE {
+typedef enum{
     ALU_ADD = 0,
     ALU_SUB,
     ALU_MUL,
@@ -29,7 +29,7 @@ static enum ALU_OPCODE {
     ALU_LT,
     ALU_GTE,
     ALU_LTE
-};
+}ALU_OPCODE;
 
 //-------------------- ALU ----------------------------
 class ALU {
