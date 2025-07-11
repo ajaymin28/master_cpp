@@ -66,8 +66,8 @@ CMakeLists.txt
 * `12.SmartPointer.cpp` — Smart pointers (unique\_ptr, shared\_ptr)
 * `13.Unions.cpp` — Unions in C++
 * `14.Modifier.cpp` — Const, static, and other modifiers
+* `15.EnumsExample.cpp` - Enums example
 * `IntegerArray.h`, `Vehicle.cpp`, `Vehicle.h` — Additional class and header examples
-* `sample.cpp` — Sample usage and/or miscellaneous code
 
 ---
 

@@ -2,11 +2,11 @@
 
 using namespace std;
 
-enum license_status{
+typedef enum {
     LC_VALID,
     LC_EXPIRED,
     LC_EXPIERING_SOON
-};
+}license_status;
 
 const char* print_license_status(const license_status l_inst){
     const char *status[] = {"is Valid", "has expired", "Will expire in 1 month"};
