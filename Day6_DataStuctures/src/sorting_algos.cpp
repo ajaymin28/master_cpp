@@ -1,5 +1,6 @@
 #include "sorting_algos.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -52,7 +53,7 @@ void sorting_algos::selection_sort(){
         swap_elements(&array_list[i], &array_list[min_idx]);
     }
 
-    cout << "Final sorted array " << endl;
+    cout << "Final sorted array using selection sort." << endl;
     print_array();
 }
 
@@ -93,9 +94,100 @@ void sorting_algos::insertion_sort(){
 
 }
 
+void merge(vector<int> &data, unsigned left, unsigned mid, unsigned right){
+
+    unsigned elements_left = mid-left+1;
+    vector<int> left_elements;
+    // cout << "Left: [";
+    for(unsigned i=0;i<elements_left;i++){
+        left_elements.push_back(data[left+i]);
+        // cout << left_elements[i] << " ";
+    }
+
+    // cout << "] ";
+
+    unsigned elements_right = right-mid;
+    vector<int> right_elements;
+    // cout << "Right : [";
+    for(unsigned i=0;i<elements_right;i++){
+        right_elements.push_back(data[mid+1+i]);
+        // cout << right_elements[i] << " ";
+    }
+    // cout << "] " << endl;
+
+    unsigned i=0;
+    unsigned j=0;
+    unsigned pos = left;
+
+    // check left and right list and pick the small from both unless one or both exceedes their index capacity.
+    while((i< left_elements.size()) && (j < right_elements.size())){
+        if(left_elements[i] <= right_elements[j]){
+            data[pos] = left_elements[i];
+            i++;
+        }else{
+            data[pos] = right_elements[j];
+            j++;
+        }
+        pos++;
+    }
+
+
+    // add remaining data from left
+    while(i<left_elements.size()){
+        data[pos] = left_elements[i];
+        i++;
+        pos++;
+    }
+
+    // add remaining data from right
+    while(j< right_elements.size()){
+        data[pos] = right_elements[j];
+        j++;
+        pos++;
+    }
+
+}
+
+void merge_sort_rec(vector<int> &data, unsigned left, unsigned right){
+
+    if (left < right){
+        int mid = (left + right)/2;
+
+        merge_sort_rec(data, left, mid);
+        merge_sort_rec(data, mid+1, right);
+
+        merge(data, left, mid, right);
+    }
+}
+
 void sorting_algos::merge_sort(){
     // divide and conquer
-    
+    /*
 
+    [41 67 34 0 69 24]
+    [41 67 34] [0 69 24]
 
+    [41 67] [34] [0 69] [24]  <- max split either 1 or two elements
+    [34 41 67]  [0 24 69]
+
+    [0 24 34 41 67 69]
+
+    */
+
+    unsigned left = 0;
+    unsigned right = array_size-1;
+
+    vector<int> array_data_vec;
+
+    for(int i=0;i<array_size;i++){
+        array_data_vec.push_back(array_list[i]);
+    }
+
+    merge_sort_rec(array_data_vec,left,right);
+
+    for(int i=0;i<array_size;i++){
+        array_list[i] = array_data_vec[i];
+    }
+
+    print_array();
 }

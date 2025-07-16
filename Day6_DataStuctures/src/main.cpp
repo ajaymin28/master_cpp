@@ -53,8 +53,8 @@ void test_sort_algos(){
     cout << endl;
     // s.selection_sort();
     // s.bubble_sort();
-    s.insertion_sort();
-    // s.merge_sort();
+    // s.insertion_sort();
+    s.merge_sort();
 }
 
 
