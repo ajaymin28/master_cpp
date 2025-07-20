@@ -9,6 +9,13 @@ struct Centeroid{
     Centeroid(const int x=0, const int y=0): x(x), y(y) {}
 };
 
+struct S 
+{
+    int x;
+    int y;
+    auto operator<=>(const S &s) const = default; // defaulted threeway comparision
+};
+
 
 IntegerArray operator+(const IntegerArray c1, const IntegerArray c2){
 
