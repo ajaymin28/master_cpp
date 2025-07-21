@@ -5,8 +5,8 @@
 using namespace std;
 
 
-int main(){
-// int orderedmaps(){
+// int main(){
+int orderedmaps(){
 
     map<int, int> ordered_map;
     ordered_map[9] = 9 * 9;

@@ -6,7 +6,8 @@
 add_executable (cpp_master_advance_topics
           "1.virtual_inheritance.cpp" "2.function_objects.cpp" 
           "3.threads.cpp" "4.mutex.cpp" "5.atomic.cpp"
-
+          "6.namespaces.cpp" "7.randomnumgen.cpp"
+          "8.fileio.cpp" "9.constexpr.cpp"
         )
 
 
