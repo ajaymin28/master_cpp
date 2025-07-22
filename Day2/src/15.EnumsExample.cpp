@@ -13,8 +13,8 @@ const char* print_license_status(const license_status l_inst){
     return status[l_inst];
 }
 
-// int enumExamples(){
-int main(){
+int enumExamples(){
+// int main(){
 
     license_status l1 = LC_VALID;
     license_status l2 = LC_EXPIRED;

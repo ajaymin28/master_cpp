@@ -2,6 +2,7 @@
 #include <bitset>
 #include <cstring> // for memcpy
 #include <iomanip> // set precision
+#include <stdint.h>
 
 void showFloatBits(float f) {
     uint32_t bits;
@@ -15,8 +16,8 @@ bool almostEqual(float a, float b, float epsilon = 1e-5f) {
     return std::fabs(a - b) < epsilon;
 }
 
-int main() {
-// int floatops() {
+// int main() {
+int floatops() {
 
     int x = 2;
     std::bitset<32> intbit_rep(x);

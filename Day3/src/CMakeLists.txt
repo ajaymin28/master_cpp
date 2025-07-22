@@ -11,7 +11,7 @@ add_executable (cpp_master_d3
           "1.Memoization.cpp" 
           "2.UnorderMaps.cpp" "3.OrderedMaps.cpp"
           "4.DataOrientedDesign.cpp" 
-          "5.Stringops.cpp" "6.floatops.cpp"
+          "5.Stringops.cpp" "6.floatops.cpp" "7.datatypelimits.cpp"
         )
 
 
